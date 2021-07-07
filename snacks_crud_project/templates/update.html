@@ -1,0 +1,14 @@
+  
+  
+{% extends 'base.html' %}
+
+{% block content %}
+
+<form action="" method="post">
+  {% csrf_token %}
+  <section>
+    {{ form.as_table }}
+  </section>
+  <button type="submit" name="update">Update</button>
+</form>
+{% endblock %}
